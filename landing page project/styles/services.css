@@ -1,0 +1,61 @@
+
+
+/* :root{
+    --main--color:#0F172A;
+    --text--color:white;
+    --button--color:#22C55E;
+    --background-color:#e0e1e4;
+} */
+
+.services .services-container{
+    margin: 20px 100px 10px 100px;
+}
+.services .services-container .cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards{
+    margin-top: 20px;
+}
+.cards .first-card, .second-card, .third-card{
+    background-color:var(--text--color);
+    color: var(--main--color);
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    text-align: left;
+    padding: 15px;
+    padding-top: 20px;
+    box-shadow: 7px 15px 30px rgb(121, 119, 119);;
+}
+
+.cards > div > div{
+    background-color: var(--main--color);
+    color: var(--text--color);
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.cards > div:hover{
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
