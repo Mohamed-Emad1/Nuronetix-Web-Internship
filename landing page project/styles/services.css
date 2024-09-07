@@ -1,33 +1,36 @@
-
-
-/* :root{
-    --main--color:#0F172A;
-    --text--color:white;
-    --button--color:#22C55E;
-    --background-color:#e0e1e4;
-} */
+:root{
+    --main--color: #0F172A;
+    --text--color: white;
+    --button--color: #22C55E;
+    --background-color: #e0e1e4;
+}
 
 .services .services-container{
-    margin: 20px 100px 10px 100px;
+    margin: 20px 50px 10px 50px;
 }
+
 .services .services-container .cards{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .cards{
     margin-top: 20px;
 }
+
 .cards .first-card, .second-card, .third-card{
-    background-color:var(--text--color);
+    background-color: var(--text--color);
     color: var(--main--color);
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     height: 200px;
     border-radius: 10px;
     text-align: left;
     padding: 15px;
     padding-top: 20px;
-    box-shadow: 7px 15px 30px rgb(121, 119, 119);;
+    box-shadow: 7px 15px 30px rgb(121, 119, 119);
+    margin-bottom: 20px;
 }
 
 .cards > div > div{
@@ -38,24 +41,177 @@
     border-radius: 5px;
     text-align: center;
     padding-top: 10px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    margin-bottom: 10px;
     font-weight: bolder;
     font-size: 24px;
+    margin-bottom: 10px;
 }
 
 .cards > div:hover{
     transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
     transform: translateY(-10px);
-    -webkit-transform: translateY(-10px);
-    -moz-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    -o-transform: translateY(-10px);
+}
+
+.serve-first, .serve-second .container{
+    margin-top: 100px;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+}
+
+.serve-second{
+    background-color: #ece9e9;
+}
+
+.serve-second .container{
+    padding: 15px;
+    padding-bottom: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.serve-first .images, .serve-second .images{
+    position: relative;
+    width: 100%;
+}
+
+.serve-first .images img:nth-child(1),
+.serve-second .images img:nth-child(1){
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.serve-first .images img:nth-child(2),
+.serve-second .images img:nth-child(2){
+    position: absolute;
+    top: 140px;
+    left: 300px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.serve-first .words p, .serve-second .words p{
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(51, 51, 51);
+}
+
+.serve-first .words ul{
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.serve-first .words ul li{
+    margin-top: 5px;
+}
+
+.serve-first .words button, .serve-second .words button, form .form-container > input{
+    margin-top: 15px;
+    background-color: var(--main--color);
+    color: var(--text--color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .services h1{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .services .services-container{
+        margin: 20px 20px 10px 20px;
+    }
+
+    .cards .first-card, .second-card, .third-card{
+        width: 75%;
+    }
+
+    .serve-first, .serve-second .container{
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+        flex-wrap: wrap;
+    }
+
+    .serve-second .container{
+        padding: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .serve-first .images, .serve-second .images{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .serve-first .images img:nth-child(1),
+    .serve-second .images img:nth-child(1){
+        width: 100%;
+        max-width: 190px;
+        margin-top: 15px;
+        margin-bottom: 74px;
+    }
+
+    .serve-first .images img:nth-child(2),
+    .serve-second .images img:nth-child(2){
+        top: 100px;
+        left: 58px;
+        max-width: 135px;
+        margin-bottom: 15px;
+    }
+
+    .serve-first .words p, .serve-second .words p{
+        font-size: 14px;
+        line-height: 1.5;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: rgb(51, 51, 51);
+        text-align: center;
+    }
+
+    .serve-first .words h1, .serve-second .words h1{
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .serve-first .words, .serve-second .words{
+        margin-left: 30px;
+        margin-right: 30px;
+        text-align: center;
+    }
+
+    .serve-first .words button, .serve-second .words button{
+        font-size: 14px;
+        padding: 8px 16px;
+        margin: 2px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .cards .first-card, .second-card, .third-card{
+        width: 100%;
+    }
+
+    .serve-first .images img:nth-child(1),
+    .serve-second .images img:nth-child(1){
+        max-width: 150px;
+    }
+
+    .serve-first .images img:nth-child(2),
+    .serve-second .images img:nth-child(2){
+        max-width: 100px;
+        top: 80px;
+        left: 30px;
+    }
+
+    .serve-first .words h1, .serve-second .words h1{
+        font-size: 18px;
+    }
 }

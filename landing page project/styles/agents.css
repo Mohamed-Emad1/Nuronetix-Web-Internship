@@ -1,0 +1,71 @@
+.agents{
+    padding: 10px;
+}
+.agents .agents-container{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.agents .agents-container h1{
+    font-weight: 700;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+.agent-cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+.agent-cards > div .image img{
+    max-width: 300px;
+    border-radius: 15px;
+}
+.agent-cards > div{
+    background-color: var(--text--color);
+    padding: 15px;
+    padding-bottom: 22px;
+    border-radius: 15px;
+}
+
+.agent-cards > div:hover{
+    transition: 0.5s;
+    transform: translateY(-10px);
+}
+
+.agent-cards > div h3{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-weight: 900;
+}
+.agent-cards > div p{
+    color: rgb(46, 45, 45);
+}
+
+@media (max-width: 768px) {
+    .agent-cards{
+        flex-direction: column;
+    }
+    .agent-cards > div{
+        margin-bottom: 20px;
+    }
+    .agents .agents-container h1{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .agent-cards > div .image img{
+        max-width: 250px;
+    }
+    .agents .agents-container h1{
+        font-size: 20px;
+    }
+    .agent-cards > div{
+        padding: 10px;
+        padding-bottom: 15px;
+    }
+}
