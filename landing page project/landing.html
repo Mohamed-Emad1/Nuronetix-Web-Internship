@@ -17,19 +17,20 @@
     <!-- nav start -->
     <nav>
         <ul class="nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Our team</a></li>
+            
+        <li><a href="#" onclick="scrollToServices()">Services</a></li>
+        <li><a href="#" onclick="scrollToAgents()">Our team</a></li>
+        <!-- <li><a href="#" onclick="scrollToContact()">Contact us</a></li> -->
         </ul>
 
-        <button>Contact us</button>
+        <button onclick="scrollToContact()">Contact us</button>
     </nav>
 
     <!-- nav end -->
 
 
     <!-- services start -->
-     <div class="services">
+     <div class="services" id="services">
         <div class="services-container">
             <h1>Our services</h1>
             <div class="cards">
@@ -101,7 +102,7 @@
 
 
      <!-- agents start -->
-      <div class="agents">
+      <div class="agents" id="agents">
         <div class="agents-container">
             <h1>Meet our Agents</h1>
 
@@ -143,7 +144,7 @@
 
       <!-- form start -->
        <!-- form start -->
-<form action="">
+<form action="" id="contact">
     <div class="form-container">
         <h1>Contact us</h1>
         <div class="form">
@@ -175,6 +176,8 @@
      </footer>
      <!-- footer end -->
      
+
+     <script src="js/main.js"></script>
     
 </body>
 </html>
