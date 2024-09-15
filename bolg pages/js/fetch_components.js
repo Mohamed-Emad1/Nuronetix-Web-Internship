@@ -1,6 +1,6 @@
 function fetchComponent(component, container)
 {
-    console.log(container)
+    // console.log(container)
   fetch(component)
     .then((response) => response.text())
     .then((data) => {
