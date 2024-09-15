@@ -1,0 +1,10 @@
+@import url('/bolg pages/styles/colors.css');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navbar-container{
+    background-color: var(--main-color) !important;
+}
