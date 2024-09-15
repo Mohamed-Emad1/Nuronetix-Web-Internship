@@ -4,7 +4,9 @@
     padding: 15px !important;
    
 }
-
+.navbar.navbar-expand-lg.bg-body-tertiary {
+    background-color: var(--main-color) !important; /* Change to your desired color */
+}
 .navbar .navbar-nav a{
      color: var( --nabbar-text-color) !important;
 }

@@ -1,0 +1,11 @@
+.py-3{
+    background-color: var(--footer-color) !important;
+    color: var(--white-color) !important;
+}
+
+.py-3 ul li a{
+   color: var(--white-color) !important;
+}
+.py-3 p {
+    color: var(--white-color) !important;
+}
