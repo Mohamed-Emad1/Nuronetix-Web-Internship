@@ -1,3 +1,4 @@
+
 const historyBlogPosts = [
   {
     title: "The Fall of the Roman Empire",
@@ -228,7 +229,10 @@ function createCard(card) {
                 <h5>${card.title}</h5>
                 <p>${card.description}</p>
                 
-                <button>Read More</button>
+               <button onclick='handleReadMore(${JSON.stringify(card).replace(
+                 /'/g,
+                 "&apos;"
+               )})'>Read More</button>
             </div>
         </div>
     `;
@@ -261,6 +265,38 @@ document.addEventListener("DOMContentLoaded", function () {
   
 });
 
+function handleReadMore(card)
+{
+  
+  // Show modal
+  const modal = document.getElementById("modal");
+  modal.style.display = "block";
 
+  // Set modal content
+  document.getElementById("modal-image").src = card.image;
+  document.getElementById("modal-title").innerText = card.title;
+  document.getElementById("modal-description").innerText = card.description;
+}
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Close modal when clicking the "x" button
+  const closeModal = document.getElementById("closeModal");
+
+  if (closeModal) {
+    closeModal.onclick = function () {
+      const modal = document.getElementById("modal"); // Corrected ID
+      modal.style.display = "none";
+    };
+  }
+});
+
+
+window.onclick = function (event) {
+  const modal = document.getElementById("modal");
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
 
 
