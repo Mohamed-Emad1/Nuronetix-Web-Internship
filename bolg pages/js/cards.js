@@ -278,7 +278,6 @@ function handleReadMore(card)
   document.getElementById("modal-description").innerText = card.description;
 }
 
-
 document.addEventListener("DOMContentLoaded", function () {
   // Close modal when clicking the "x" button
   const closeModal = document.getElementById("closeModal");
@@ -290,6 +289,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
   }
 });
+
 
 
 window.onclick = function (event) {
